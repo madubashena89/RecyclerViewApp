@@ -1,5 +1,6 @@
 package com.example.recyclerviewapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -16,5 +17,15 @@ class SecondActivity : AppCompatActivity() {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
 
         txvUserMsg.text = msg
+
+        btnShareToOtherApps.setOnClickListener{
+            val message = msg
+            val intent = Intent()
+            intent.action = Intent.ACTION_SEND
+            intent.putExtra(Intent.EXTRA_TEXT, message)
+            intent.type = "text/plain"
+            startActivity(Intent.createChooser(intent, "Share to : "))
+
+        }
     }
 }
