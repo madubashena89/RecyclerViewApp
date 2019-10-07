@@ -1,5 +1,6 @@
 package com.example.recyclerviewapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -12,9 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnShowToast.setOnClickListener{
-            Log.i("MainAct", "Button clicked")
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
+        btnSendMsgNextAct.setOnClickListener{
+            val message = etUserMessage.text.toString()
+            Log.i("MainAct", "$message")
+            val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+
+
         }
     }
 }
