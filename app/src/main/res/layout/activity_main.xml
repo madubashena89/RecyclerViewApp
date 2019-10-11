@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        android:padding="20dp">
+        android:padding="20dp"
+        tools:context=".activities.MainActivity">
 
 
     <EditText
+            android:id="@+id/etUserMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etUserMessage"
-            android:hint="Enter message"
-            android:layout_margin="100dp"/>
+            android:layout_margin="100dp"
+            android:hint="Enter message" />
 
     <Button
             android:id="@+id/btnSendMsgNextAct"
-            android:layout_alignBottom="@+id/etUserMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Send data to next activity"
-            android:layout_margin="30dp"/>
+            android:layout_alignBottom="@+id/etUserMessage"
+            android:layout_margin="30dp"
+            android:text="Send data to next activity" />
 
     <Button
             android:id="@+id/btnRecyclerViewDemo"
@@ -30,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/btnSendMsgNextAct"
             android:layout_marginBottom="-263dp"
-            android:text="RecyclyerView Example"/>
+            android:text="RecyclyerView Example" />
 
 
 </RelativeLayout>

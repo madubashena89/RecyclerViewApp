@@ -1,4 +1,4 @@
-package com.example.recyclerviewapp
+package com.example.recyclerviewapp.adapters
 
 import android.content.Context
 import android.content.Intent
@@ -7,9 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.recyclerviewapp.models.HobbiesData
+import com.example.recyclerviewapp.R
 import kotlinx.android.synthetic.main.list_items_hobby.view.*
 
-class HobbiesAdaptor (val context : Context, val hobbies : List<HobbiesData>): RecyclerView.Adapter<HobbiesAdaptor.MyViewHolder>(){
+class HobbiesAdaptor (val context : Context, private val hobbies : List<HobbiesData>): RecyclerView.Adapter<HobbiesAdaptor.MyViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.list_items_hobby, parent, false)
         return MyViewHolder(view)

@@ -1,8 +1,8 @@
-package com.example.recyclerviewapp
+package com.example.recyclerviewapp.models
 
 data class HobbiesData(var title : String){
     object Supplier {
-        val hobbies = listOf<HobbiesData>(
+        val hobbies = listOf(
             HobbiesData("Swimming"),
             HobbiesData("Dancing"),
             HobbiesData("Running"),

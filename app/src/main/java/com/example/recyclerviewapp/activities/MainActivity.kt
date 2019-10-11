@@ -1,9 +1,10 @@
-package com.example.recyclerviewapp
+package com.example.recyclerviewapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.recyclerviewapp.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

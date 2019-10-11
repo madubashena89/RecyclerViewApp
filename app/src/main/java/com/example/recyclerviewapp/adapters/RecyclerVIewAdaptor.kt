@@ -1,12 +1,9 @@
-package com.example.recyclerviewapp
+package com.example.recyclerviewapp.adapters
 
-import android.nfc.Tag
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RelativeLayout
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import de.hdodenhof.circleimageview.CircleImageView
+import com.example.recyclerviewapp.models.User
 
 class RecyclerVIewAdaptor (val userList : ArrayList<User>) : RecyclerView.Adapter<RecyclerVIewAdaptor.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
