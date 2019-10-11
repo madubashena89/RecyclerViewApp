@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.recyclerviewapp.R
+import com.example.recyclerviewapp.showToast
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
@@ -15,7 +16,8 @@ class SecondActivity : AppCompatActivity() {
 
         val bundle : Bundle? = intent.extras
         val msg = bundle!!.getString("user_messageIn")
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+        showToast(msg!!)
+        //Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
 
         txvUserMsg.text = msg
 
