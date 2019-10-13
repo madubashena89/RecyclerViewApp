@@ -9,10 +9,15 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewapp.models.HobbiesData
 import com.example.recyclerviewapp.R
+import com.example.recyclerviewapp.activities.MainActivity
 import com.example.recyclerviewapp.showToast
 import kotlinx.android.synthetic.main.list_items_hobby.view.*
 
 class HobbiesAdaptor (val context : Context, private val hobbies : List<HobbiesData>): RecyclerView.Adapter<HobbiesAdaptor.MyViewHolder>(){
+    companion object{
+        val TAG:String = HobbiesAdaptor::class.java.simpleName
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.list_items_hobby, parent, false)
         return MyViewHolder(view)
@@ -34,21 +39,30 @@ class HobbiesAdaptor (val context : Context, private val hobbies : List<HobbiesD
 
         init {
             itemView.setOnClickListener {
-                context.showToast(currentHobby!!.title + "Clicked")
+                currentHobby.let {
+                    context.showToast(currentHobby!!.title + "Clicked")
+                }
             }
+
             itemView.image_share.setOnClickListener{
-                val message = "My hobby is " + currentHobby!!.title
-                val intent = Intent()
-                intent.action = Intent.ACTION_SEND
-                intent.putExtra(Intent.EXTRA_TEXT, message)
-                intent.type = "text/plain"
-                context.startActivity(Intent.createChooser(intent, "Share to : "))
+
+                currentHobby.let {
+                    val message = "My hobby is " + currentHobby!!.title
+                    val intent = Intent()
+                    intent.action = Intent.ACTION_SEND
+                    intent.putExtra(Intent.EXTRA_TEXT, message)
+                    intent.type = "text/plain"
+                    context.startActivity(Intent.createChooser(intent, "Share to : "))
+                }
+
             }
 
         }
         fun setData(hobby : HobbiesData?, postn : Int){
-            itemView.txvTitle.text = hobby!!.title
+           hobby?.let {
+               itemView.txvTitle.text = hobby.title
 
+           }
             this.currentHobby = hobby
             this.currentPosition = postn
         }

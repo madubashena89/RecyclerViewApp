@@ -9,7 +9,9 @@ import com.example.recyclerviewapp.R
 import kotlinx.android.synthetic.main.activity_hobby.*
 
 class HobbyActivity : AppCompatActivity() {
-
+    companion object{
+        val TAG:String = HobbyActivity::class.java.simpleName
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hobby)
