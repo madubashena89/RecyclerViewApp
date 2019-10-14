@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     companion object{
-        val TAG:String = MainActivity::class.java.simpleName
+        val TAG : String = MainActivity::class.java.simpleName
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         btnSendMsgNextAct.setOnClickListener{
             val message = etUserMessage.text.toString()
             Log.i(TAG, "$message")
-            showToast("Button was clicked !")
+            showToast(resources.getString(R.string.button_was_clicked))
             //explicit intent to pass message to second activity
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra(Constants.USER_MSG_Key, message)
