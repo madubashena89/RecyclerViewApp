@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RecyclerViewApp</string>
+    <string name="app_name">Recycler View App</string>
     <string name="enter_message">Enter message</string>
     <string name="send_data_to_next_activity">Send data to next activity</string>
     <string name="recyclyerview_example">RecyclyerView Example</string>
