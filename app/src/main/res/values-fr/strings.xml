@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recycler Voir App</string>
+    <string name="enter_message">Entrez le message</string>
+    <string name="send_data_to_next_activity">Envoyer les données à lactivité suivante</string>
+    <string name="recyclyerview_example">Exemple RecyclyerView</string>
+    <string name="button_was_clicked">Le bouton a été cliqué!</string>
+</resources>
