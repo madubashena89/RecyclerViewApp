@@ -1,12 +1,12 @@
-package com.example.recyclerviewapp.activities
+package com.shareapp.recyclerviewapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.recyclerviewapp.Constants
-import com.example.recyclerviewapp.R
-import com.example.recyclerviewapp.showToast
+import com.shareapp.recyclerviewapp.Constants
+import com.shareapp.recyclerviewapp.R
+import com.shareapp.recyclerviewapp.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
