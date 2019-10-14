@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.example.recyclerviewapp">
+        package="com.shareapp.recyclerviewapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,15 +11,15 @@
             android:roundIcon="@mipmap/ic_launcher_share_new"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".activities.HobbyActivity"></activity>
-        <activity android:name=".activities.MainActivity">
+        <activity android:name="com.shareapp.recyclerviewapp.activities.HobbyActivity"></activity>
+        <activity android:name="com.shareapp.recyclerviewapp.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SecondActivity" />
+        <activity android:name="com.shareapp.recyclerviewapp.activities.SecondActivity" />
     </application>
 
 </manifest>

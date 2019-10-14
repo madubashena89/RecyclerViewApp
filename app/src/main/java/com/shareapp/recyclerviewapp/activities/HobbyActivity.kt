@@ -1,11 +1,11 @@
-package com.example.recyclerviewapp.activities
+package com.shareapp.recyclerviewapp.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.recyclerviewapp.adapters.HobbiesAdaptor
-import com.example.recyclerviewapp.models.HobbiesData
-import com.example.recyclerviewapp.R
+import com.shareapp.recyclerviewapp.adapters.HobbiesAdaptor
+import com.shareapp.recyclerviewapp.models.HobbiesData
+import com.shareapp.recyclerviewapp.R
 import kotlinx.android.synthetic.main.activity_hobby.*
 
 class HobbyActivity : AppCompatActivity() {

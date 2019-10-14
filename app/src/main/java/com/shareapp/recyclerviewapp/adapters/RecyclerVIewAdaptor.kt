@@ -1,9 +1,9 @@
-package com.example.recyclerviewapp.adapters
+package com.shareapp.recyclerviewapp.adapters
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.recyclerviewapp.models.User
+import com.shareapp.recyclerviewapp.models.User
 
 class RecyclerVIewAdaptor (val userList : ArrayList<User>) : RecyclerView.Adapter<RecyclerVIewAdaptor.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

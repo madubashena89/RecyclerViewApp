@@ -1,6 +1,5 @@
-package com.example.recyclerviewapp
+package com.shareapp.recyclerviewapp
 
-import android.app.Activity
 import android.content.Context
 import android.widget.Toast
 

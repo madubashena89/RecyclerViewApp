@@ -1,16 +1,14 @@
-package com.example.recyclerviewapp.adapters
+package com.shareapp.recyclerviewapp.adapters
 
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.example.recyclerviewapp.models.HobbiesData
-import com.example.recyclerviewapp.R
-import com.example.recyclerviewapp.activities.MainActivity
-import com.example.recyclerviewapp.showToast
+import com.shareapp.recyclerviewapp.models.HobbiesData
+import com.shareapp.recyclerviewapp.R
+import com.shareapp.recyclerviewapp.showToast
 import kotlinx.android.synthetic.main.list_items_hobby.view.*
 
 class HobbiesAdaptor (val context : Context, private val hobbies : List<HobbiesData>): RecyclerView.Adapter<HobbiesAdaptor.MyViewHolder>(){
